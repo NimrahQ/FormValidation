@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>Login Form</header>
+        <form>
+            <div class="input-field">
+                <input type="text" name="" id="">
+                <label for="">Email or Username</label>
+            </div>
+            <div class="input-field">
+                <input class="pswd" type="password" name="" id="">
+                <span class="show">SHOW</span>
+                <label for="">Password</label>
+            </div>
+
+            <div class="button">
+                <div class="inner"></div>
+                <button class="btn">LOGIN</button>
+            </div>
+        </form>
+        <div class="auth">Or login with</div>
+        <div class="links">
+           <div class="facebook"> <i class="fa-brands fa-facebook-f"></i><span>Facrbook</span></div>
+        <div class="google"><i class="fa-brands fa-google"></i><span>Google</span></div>
+    </div>
+    <div class="signup">
+        Not a Number> <a href="#">Signup now</a>
+    </div>
+    </div>
+<script>
+    var password = document.querySelector(".pswd");
+    var show = document.querySelector('.show');
+    show.addEventListener('click',active);
+    function active(){
+        if(password.type==='password'){
+            password.type ='text';
+            show.style.color='#1da1f2';
+            show.textContent = 'HIDE'
+        }else{
+            password.type='password';
+            show.style.color='#000';
+            show.textContent = 'SHOW'
+        }
+    }
+</script>
+   
+</body>
+</html>
